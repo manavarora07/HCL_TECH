@@ -1,0 +1,157 @@
+{
+  "success": false,
+  "statistics": {
+    "evaluated_expectations": 36,
+    "successful_expectations": 29,
+    "unsuccessful_expectations": 7,
+    "rows": 57513
+  },
+  "results": [
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "Transaction_ID",
+      "success": false,
+      "result": {
+        "unexpected_count": 60,
+        "sample_unexpected_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ]
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "Customer_ID",
+      "success": false,
+      "result": {
+        "unexpected_count": 56,
+        "sample_unexpected_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ]
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "Email",
+      "success": false,
+      "result": {
+        "unexpected_count": 68,
+        "sample_unexpected_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ]
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "Amount",
+      "success": false,
+      "result": {
+        "unexpected_count": 69,
+        "sample_unexpected_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ]
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_match_strict_email",
+      "column": "Email",
+      "success": false,
+      "result": {
+        "invalid_count": 68,
+        "sample_invalid_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ]
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_match_strict_date",
+      "column": "Date",
+      "success": false,
+      "result": {
+        "invalid_count": 57513,
+        "sample_invalid_values": [
+          "12/31/2023",
+          "6/7/2023",
+          "5/22/2023",
+          "5/7/2023",
+          "3/19/2023",
+          "5/18/2023",
+          "10/14/2023",
+          "6/15/2023",
+          "11/26/2023",
+          "2/3/2024"
+        ],
+        "expected_format": "%Y-%m-%d"
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_match_strict_time",
+      "column": "Time",
+      "success": false,
+      "result": {
+        "invalid_count": 65,
+        "sample_invalid_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ],
+        "expected_format": "%H:%M:%S"
+      }
+    }
+  ],
+  "meta": {
+    "csv": "sample_data\\retail_data_Source.csv",
+    "config_path": "C:\\Users\\mayan\\OneDrive\\Desktop\\loyalty-pipeline\\configs\\ingestion_config.yml"
+  }
+}

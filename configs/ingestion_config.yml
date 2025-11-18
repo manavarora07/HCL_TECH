@@ -1,0 +1,74 @@
+columns:
+  - name: Transaction_ID
+    type: string
+  - name: Customer_ID
+    type: string
+  - name: Name
+    type: string
+  - name: Email
+    type: string
+  - name: Phone
+    type: string
+  - name: Address
+    type: string
+  - name: City
+    type: string
+  - name: State
+    type: string
+  - name: Zipcode
+    type: string
+  - name: Country
+    type: string
+  - name: Department
+    type: string
+  - name: Item_Price
+    type: float
+  - name: Quantity
+    type: int
+  - name: Date
+    type: string
+  - name: Year
+    type: int
+  - name: Month
+    type: string
+  - name: Time
+    type: string
+  - name: Total_Purchases
+    type: float
+  - name: Amount
+    type: float
+  - name: Total_Amount
+    type: float
+  - name: Product_Category
+    type: string
+  - name: Product_Brand
+    type: string
+  - name: Product_Type
+    type: string
+  - name: Feedback
+    type: string
+  - name: Shipping_Method
+    type: string
+  - name: Payment_Method
+    type: string
+  - name: Order_Status
+    type: string
+  - name: Ratings
+    type: float
+  - name: products
+    type: string
+
+required:
+  - Transaction_ID
+  - Customer_ID
+  - Email
+  - Amount
+
+unique_keys: []
+
+# Tell validator the formats actually used in your CSV.
+# Date in your CSV is like "12/31/2023" -> "%m/%d/%Y"
+# Time examples may be "%H:%M:%S" or "%H:%M" — cleaning script will normalize.
+validations:
+  Date: "%m/%d/%Y"
+  Time: "%H:%M:%S"

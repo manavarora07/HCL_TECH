@@ -1,0 +1,97 @@
+{
+  "success": false,
+  "statistics": {
+    "evaluated_expectations": 36,
+    "successful_expectations": 32,
+    "unsuccessful_expectations": 4,
+    "rows": 57376
+  },
+  "results": [
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "Transaction_ID",
+      "success": false,
+      "result": {
+        "unexpected_count": 60,
+        "sample_unexpected_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ]
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_not_be_null",
+      "column": "Customer_ID",
+      "success": false,
+      "result": {
+        "unexpected_count": 56,
+        "sample_unexpected_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ]
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_match_strict_date",
+      "column": "Date",
+      "success": false,
+      "result": {
+        "invalid_count": 57376,
+        "sample_invalid_values": [
+          "2023-12-31",
+          "2023-06-07",
+          "2023-05-22",
+          "2023-05-07",
+          "2023-03-19",
+          "2023-05-18",
+          "2023-10-14",
+          "2023-06-15",
+          "2023-11-26",
+          "2024-02-03"
+        ],
+        "expected_format": "%m/%d/%Y"
+      }
+    },
+    {
+      "expectation": "expect_column_values_to_match_strict_time",
+      "column": "Time",
+      "success": false,
+      "result": {
+        "invalid_count": 65,
+        "sample_invalid_values": [
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan",
+          "nan"
+        ],
+        "expected_format": "%H:%M:%S"
+      }
+    }
+  ],
+  "meta": {
+    "csv": "data\\cleaned.csv",
+    "config_path": "C:\\Users\\mayan\\OneDrive\\Desktop\\loyalty-pipeline\\configs\\ingestion_config.yml"
+  }
+}

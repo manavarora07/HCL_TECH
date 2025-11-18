@@ -1,0 +1,12 @@
+product_id,product_name,category,price,current_stock_level
+1,products,Product_Category,Amount,100
+2,Henley tee,Clothing,245.8328184,100
+3,Desk lamps,Home Decor,432.5507726,100
+4,Bookshelf,Home Decor,460.429312,100
+5,Tomato juice,Grocery,394.4471312,100
+6,Swim trunks,Clothing,492.4953019,100
+7,Legal thriller,Books,264.3791356,100
+8,Biography,Books,440.3572913,100
+9,Desk,Home Decor,250.0948483,100
+10,Tape measure,Home Decor,236.8076706,100
+11,Sculptures,Home Decor,318.2761227,100
